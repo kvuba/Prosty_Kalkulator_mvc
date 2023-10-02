@@ -1,0 +1,13 @@
+﻿@model Kalkulator.Models.Dane
+
+@{
+    ViewData["Title"] = "Kalkulator";
+}
+
+<form action="Calculator">
+    <input type="Pierwsza_liczba" asp-for="Pierwsza_liczba" /> Pierwsza_liczba
+    <input type="Znak" asp-for="Znak" /> Znak
+    <input type="Druga_liczba" asp-for="Druga_liczba" /> Druga_liczba
+    <input type="submit" />
+</form>
+@ViewBag.wynik
